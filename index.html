@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>TodoApp</h1>
+
+        <!-- Task form -->
+        <form id="taskForm">
+            <input id="name" type="text" placeholder="Enter new task Title">
+            <input id="description" type="text" placeholder="Task description">
+            <button id="submit">Add</button>
+
+            <!-- Priority selection -->
+            <select id="priority">
+                <option value="low">Low Priority</option>
+                <option value="medium" selected>Medium Priority</option>
+                <option value="high">High Priority</option>
+            </select>
+
+            <!-- Due date input -->
+            <input id="dueDate" type="date">
+
+            <button id="submit">Add Task</button>
+        </form>
+
+        <!-- Task List -->
+        <h2>Tasks</h2>
+        <ul id="taskList"></ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
